@@ -1,15 +1,16 @@
 function setup(){
-    canvas=createCanvas(680,420);
-    canvas.position(280,270);
+    canvas=createCanvas(620,420);
+    canvas.position(230,270);
     photo="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg"
-    
+    video= createCapture(VIDEO);
+    video.hide();
     }
     function preload(){
     
     }
     
     function draw(){
-        
+        image(video,0,0,680,420);
         rect(25, 40, 40, 320);
         rect(580, 40, 40, 320);
         rect(25, 25, 580, 40);
@@ -28,5 +29,7 @@ function setup(){
         
        
     }
-     
+    function takeSnapshot(){
+        save("AaravColorImage.png");
+    }
   
