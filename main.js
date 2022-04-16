@@ -1,6 +1,6 @@
 function setup(){
-    canvas=createCanvas(620,420);
-    canvas.position(230,270);
+    canvas=createCanvas(650,420);
+    canvas.position(300,200);
     photo="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg"
     video= createCapture(VIDEO);
     video.hide();
@@ -10,7 +10,7 @@ function setup(){
     }
     
     function draw(){
-        image(video,0,0,680,420);
+        image(video,70,50,500,350);
         rect(25, 40, 40, 320);
         rect(580, 40, 40, 320);
         rect(25, 25, 580, 40);
